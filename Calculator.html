@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab 2 - Calculator III</title>
+        
+ <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+   
+     <style>
+        .increase {
+            width: 40px;
+            height: 35px;
+               
+        }
+         #result {
+             line-height: 1.5em;
+             width: 187px;
+             margin-left: 4px;
+         }
+        
+    </style>
+</head>
+   
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(":button").each(function(){
+                $(":button").addClass("increase")
+            });
+            
+            $("#zero").css({
+                        background: "#1DCFE6",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+             $("#one").css({
+                        background: "#80CFE6",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+            $("#two").css({
+                        background: "#A679E6",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+            $("#three").css({
+                        background: "#A6BFC2",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+             $("#four").css({
+                        background: "#A6DAC2",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+             $("#five").css({
+                        background: "#F6E8C2",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+            $("#six").css({
+                        background: "#F6E864",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+            $("#seven").css({
+                        background: "#F6E864",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+             $("#eight").css({
+                        background: "#ADE864",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+             $("#nine").css({
+                        background: "#ADFF64",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+            $("#divide").css({
+                        background: "#FFF3DE",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+            $("#multiply").css({
+                        background: "#C6F3DE",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+             $("#subtract").css({
+                        background: "#C6BADE",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+             $("#period").css({
+                        background: "#6F697D",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+            $("#add").css({
+                        background: "#C1B679",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+            $("#equal").css({
+                        background: "#A3B679",
+                        color: "black",
+                        fontSize: "1.2em",
+                        border: "solid 1px black",
+                        margin: "3px"
+                
+        });
+             $(":button").each(function(eve){
+            container.addEventListener("click", function(){
+                $(":button").css("color", "red");
+            }, true);
+        });
+            
+        });
+        
+    </script>
+
+<body>
+	<input type="text" readonly id="result">
+    <br>
+    <div id="container">
+        <input type="button" id="seven" value="7">
+        <input type="button" id="eight" value="8">
+        <input type="button" id="nine" value="9">
+        <input type="button" id="divide" value="/">
+        <br>
+        <input type="button" id="four" value="4">
+        <input type="button" id="five" value="5">
+        <input type="button" id="six" value="6">
+        <input type="button" id="multiply" value="*">
+        <br>
+        <input type="button" id="one" value="1">
+        <input type="button" id="two" value="2">
+        <input type="button" id="three" value="3">
+        <input type="button" id="subtract" value="-">
+        <br>
+        <input type="button" id="zero" value="0">
+        <input type="button" id="period" value=".">
+        <input type="button" id="add" value="+">
+    </div>
+    <input type="button" id="equal" value="=">
+</body>
+</html>

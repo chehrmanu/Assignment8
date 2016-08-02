@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 8 Part 2</title>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+   
+<link href="styles/accordion.css">
+<link href="styles/assignment8-part2.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+     $(function(){
+	$("#container").addClass("tabs");
+	
+	$('ul.menu li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('.menu li').removeClass('current');
+		$('.content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
+         
+     $( "#accordion" ).accordion({
+      collapsible: true
+    });
+         $( "#accordion" ).accordion();
+         $( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+})
+    
+     </script>
+</head>
+	
+<body>
+    <div id="slider">
+		<img style="z-index:0" id="imgage1" src="images/nature1.jpg" alt="1">
+		<img style="z-index:-1" id="imgage2" src="images/nature2.jpg" alt="2">
+		<img style="z-index:-2" id="imgage3" src="images/nature3.jpg" alt="3">
+		<img style="z-index:-4" id="imgage4" src="images/nature4.jpg" alt="4">
+		<img style="z-index:-5" id="imgage5" src="images/nature5.jpg" alt="5">
+	</div>
+	<ul id="list">
+		<li id="imgage1">1</li>
+		<li id="imgage2">2</li>
+		<li id="3">3</li>
+		<li id="4">4</li>
+		<li id="5">5</li>
+	</ul>
+	
+	<br><br>
+	
+<div id="container">
+
+	<ul class="menu">
+		<li class="current" data-tab = "tab-1">Slide Show</li>
+		<li data-tab = "tab-2">Tabbed Menu</li>
+		<li data-tab = "tab-3">Accordion</li>
+	</ul>
+
+	<div id="tab-1" class="content current">
+		In this part of the assignment you will create an image selection slideshow using jQuery. The image below outlines what the final result should look like. To receive maximum points on this part of the assignment, be sure to take the following into account.
+	</div>
+	<div id="tab-2" class="content">
+		 In this part of the assignment you will create a tabbed menu and associated panels using jQuery. The image below outlines what the final result should look similar to. To receive maximum points on this part of the assignment, be sure to take the following into account
+	</div>
+	<div id="tab-3" class="content">
+		In this part of the assignment you will create an accordion using jQuery. The image below outlines what the final result should look similar to. To receive maximum points on this part of the assignment, be sure to take the following into account:
+	</div>
+	
+</div>
+    
+    <div id="accordion">
+  <h3>Accordion</h3>
+  <div>
+    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+  </div>
+  <h3>Slide Show</h3>
+  <div>
+    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+  </div>
+  <h3>Tabbed Menu</h3>
+  <div>
+    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Cras dictum</h3>
+  <div>
+    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+  </div>
+</div>
+	
+	<script src="Slideshow/accordion.js"></script> 
+
+	<script src="Slideshow/slideshow.js"></script>
+	<!--<script src="js/tabbedMenu.js"></script>-->
+    
+    </body>
+</html>
